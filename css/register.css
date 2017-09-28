@@ -1,0 +1,20 @@
+.box {
+	height: 600px;
+	width: 500px;
+	background-color: #00F000;
+	border-radius: 10%;
+	border: 10px solid green;
+}
+
+.line {
+	width: 25%;
+}
+
+.sign-up {
+	font-size: 40px;
+	padding: 0 10px;
+}
+
+.short-textbox {
+	width: 80%;
+}

@@ -1,3 +1,11 @@
+<?php 
+  include 'connectdb.php';
+
+  $_SESSION["user_id"] = 1;
+
+  include 'getuser.php'
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -22,7 +30,7 @@
           </span>
         </p>
 
-        <p id="nav-uname">Hi, </p>
+        <p id="nav-uname">Hi, <?php echo $result['name']; ?> </p>
       </li>
 
       <li class="nav-description">
@@ -55,21 +63,32 @@
     <p id="myprofile">
       My Profile
     </p>
-    <img id="editpic" src="storage/images/editpic.jpg" alt="Edit">
+    <a href="/editprofile.php">
+      <img id="editpic" src="storage/images/editpic.jpg" alt="Edit">  
+    </a>
+    
 </div>
 
 <div class="information">
   <img id="profpic" src="storage/images/profpic.jpg" alt="Profile Picture">
   <p id="user-info">
-    @Pikapikachu
+    @<?php echo $result['username']; ?>
     <br>
-    Pikachu Smith
+    <?php echo $result['name']; ?>
     <br>
-    DRIVER | * 4,7 (1,728 Votes)
+    <?php 
+      if($result['isdriver'] === 0) {
+        echo "Non-Driver";
+      } else {
+        echo "Driver";
+      }
+    ?>
+    | * <?php echo number_format($rating['avgrate'],1); ?> 
+    <?php echo "(" .  $rating['votes'] . " Votes)"; ?>
     <br>
-    vincent@sdfajsd.com
+    <?php echo $result['email']; ?>
     <br>  
-    08543348454
+    <?php echo $result['phonenumber']; ?>
   </p>
 </div>
 
@@ -77,15 +96,15 @@
     <p id="myprofile">
       Preferred Locations
     </p>
-    <img id="editpic" src="storage/images/editpic.jpg" alt="Edit">
+    <a href="/editlocation.php">
+      <img id="editpic" src="storage/images/editpic.jpg" alt="Edit">  
+    </a>
+    
     <ul>
       <li>Medan</li>
       <li>Pekan Baru</li>
       <li>  Jkarta</li>
       <li>sdfsdaf</li>
-      <li> sdfjadslfjl</li>
-      <li>sdfsdaf</li>
-      <li> sdfjadslfjl</li>
     </ul>
 </div>
 

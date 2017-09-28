@@ -14,15 +14,56 @@ p {
   margin : 0;
 }
 
+/* PR-OJEK */
+.nav-title {
+  color: black;
+}
+#projek {
+  font-size: 2.5rem;
+  display: inline-block;
+}
+#pr {
+  color: green;
+}
+#ojek {
+  color: red;
+}
+
+/* Header */
+.nav-description {
+  color: green;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+#wush {
+  display: inline-block;
+  font-size: 
+}
+
+#hi-uname {
+  display: inline-block;
+  float: right;
+  vertical-align: text-bottom;
+  font-size: 1.8rem;
+}
+
+.logout-link {
+  display: inline-block;
+  float: right;
+}
 
 /* Nav Bar */
+.nav-body {
+  display: table;
+}
 .navigation {
   text-align: center;
   font-size: 1.6rem;
 }
 
 .navigation>li{
-  display: inline-table;
+  display: inline;
   border-style: solid;
   border-width: 2px !important;
 }
@@ -38,64 +79,37 @@ p {
   text-decoration: none;
 }
 
-.nav-body {
-  display: table;
-
-
-}
 
 
 
 
 
-.nav-description {
-  color: green;
-  font-size: 1.25rem;
-  margin-bottom: 10px;
-}
-
-#nav-desc {
-  display: inline-block;
-}
-
-#nav-uname {
-  display: inline-block;
-  float: right;
-  vertical-align: text-bottom;
-  font-size: 1rem;
-}
-
-.logout-link {
-  display: inline-block;
-  float: right;
-}
 
 
 
 
-/* PR-OJEK */
-.nav-title {
-  color: black;
-}
-#titlenav {
-  font-size: 2.5rem;
-  display: inline-block;
-}
-#pr {
-  color: green;
-}
-#ojek {
-  color: red;
-}
 
-/* profile */
-.profile {
+
+
+
+/* Profile NavBar */
+#profile {
   margin-top: 10px;
+  background-color: rgb(4,119,31);
+}
+#profile>a {
+  color: white;
 }
 
-#myprofile {
+/* Profile Information */
+
+#myprofile,#preffered-location {
   font-size: 3rem;
   display: inline-block;
+}
+#location {
+  list-style: katakana;
+  font-size: 1.8rem;
 }
 #editpic {
   float: right; 
@@ -112,4 +126,28 @@ p {
   border-style: solid;
   width: auto;
   height: 200px;
+}
+
+#user-info {
+  font-size: 1.6rem;
+}
+
+#rating {
+  color: gold;
+}
+
+#starpic {
+  width: auto;
+  height: 23px;
+}
+
+
+#mailpic {
+  width: auto;
+  height: 23px;
+}
+
+#phonepic {
+  width: auto;
+  height: 23px;
 }

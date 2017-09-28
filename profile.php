@@ -3,7 +3,7 @@
 
   $_SESSION["user_id"] = 1;
 
-  include 'getuser.php'
+  include 'getinfo.php'
 ?>
 
 <!DOCTYPE html>
@@ -18,61 +18,78 @@
 
 <body>
 
-  <div class="nav-header">
-    <ul class="header">
-      <li class="nav-title">
-        <p id="titlenav">
-          <span id="pr">
-            PR
-          </span>-
-          <span id="ojek">
-            OJEK
-          </span>
-        </p>
+<div class="nav-header">
 
-        <p id="nav-uname">Hi, <?php echo $result['name']; ?> </p>
-      </li>
+  <ul class="header">
 
-      <li class="nav-description">
-        <p id="nav-desc">
-          wush... wush... ngeeeeengg...
-        </p>
-        <a href="/logout.php" class="logout-link">
-          Logout
-        </a>
+    <li class="nav-title">
 
-      </li>
-    </ul>
-  </div>
+      <p id="projek">
+        <span id="pr">
+          PR
+        </span>-
+        <span id="ojek">
+          OJEK
+        </span>
+      </p>
+
+      <p id="hi-uname">Hi, <?php echo $result['username']; ?> </p>
+
+    </li>
+
+    <li class="nav-description">
+
+      <p id="wush">
+        wush... wush... ngeeeeengg...
+      </p>
+
+      <a href="/logout.php" class="logout-link">
+        Logout
+      </a>
+
+    </li>
+
+  </ul>
+
+</div>
+
 <div class="nav-body">
   <ul class="navigation">
+
     <li id="order">
       <a href="/order.php">ORDER</a>
     </li>
+
     <li id="history">
       <a href="/history.php">HISTORY</a>
     </li>
+
     <li id="profile">
       <a href="/profile.php">MY PROFILE</a>
     </li>
+
   </ul>
 </div>
 
 
-<div class="profile">
+<div class="profileinfo">
+
     <p id="myprofile">
       My Profile
     </p>
+
     <a href="/editprofile.php">
-      <img id="editpic" src="storage/images/editpic.jpg" alt="Edit">  
+      <img id="editpic" src="storage/images/editpic.png" alt="Edit">  
     </a>
     
 </div>
 
 <div class="information">
+
   <img id="profpic" src="storage/images/profpic.jpg" alt="Profile Picture">
+
   <p id="user-info">
-    @<?php echo $result['username']; ?>
+    @<?php echo "<b>" . $result['username'] . "</b>" ; ?>
     <br>
     <?php echo $result['name']; ?>
     <br>
@@ -83,28 +100,35 @@
         echo "Driver";
       }
     ?>
-    | * <?php echo number_format($rating['avgrate'],1); ?> 
+    | 
+    <span id="rating">
+    <img src="storage/images/star.png" alt="star" id="starpic">
+    <?php echo number_format($rating['avgrate'],1); ?>
+    </span> 
     <?php echo "(" .  $rating['votes'] . " Votes)"; ?>
     <br>
+    <img src="storage/images/mail.png" alt="mail" id="mailpic">
     <?php echo $result['email']; ?>
     <br>  
+    <img src="storage/images/phone.png" alt="Phone" id="phonepic">
     <?php echo $result['phonenumber']; ?>
   </p>
 </div>
 
-<div class="preffered-locations">
-    <p id="myprofile">
+<div class="locations">
+    <p id="preffered-location">
       Preferred Locations
     </p>
     <a href="/editlocation.php">
-      <img id="editpic" src="storage/images/editpic.jpg" alt="Edit">  
+      <img id="editpic" src="storage/images/editpic.png" alt="Edit">  
     </a>
     
     <ul>
-      <li>Medan</li>
-      <li>Pekan Baru</li>
-      <li>  Jkarta</li>
-      <li>sdfsdaf</li>
+      <?php 
+        foreach ($locations as $loc) {
+          echo "<li id='location'>" .$loc['location'] . "</li>";
+        }
+      ?>
     </ul>
 </div>
 

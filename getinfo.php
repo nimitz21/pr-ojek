@@ -16,5 +16,16 @@ if($ratings->num_rows > 0) {
   $rating = $ratings->fetch_assoc();
 }
 
+$locquery = "SELECT location from user_location WHERE user_id=" . $actid;
+$locresults = $db->query($locquery);
+
+$locations = array();
+
+if($locresults->num_rows > 0) {
+  while($location = $locresults->fetch_assoc()) {
+    array_push($locations, $location);
+  }
+}
+
 
 ?>

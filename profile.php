@@ -52,16 +52,41 @@
 
 
 <div class="profile">
-  <div class="prof-header">
     <p id="myprofile">
       My Profile
     </p>
     <img id="editpic" src="storage/images/editpic.jpg" alt="Edit">
-  </div>
 </div>
 
-<div class="info">
+<div class="information">
   <img id="profpic" src="storage/images/profpic.jpg" alt="Profile Picture">
+  <p id="user-info">
+    @Pikapikachu
+    <br>
+    Pikachu Smith
+    <br>
+    DRIVER | * 4,7 (1,728 Votes)
+    <br>
+    vincent@sdfajsd.com
+    <br>  
+    08543348454
+  </p>
+</div>
+
+<div class="preffered-locations">
+    <p id="myprofile">
+      Preferred Locations
+    </p>
+    <img id="editpic" src="storage/images/editpic.jpg" alt="Edit">
+    <ul>
+      <li>Medan</li>
+      <li>Pekan Baru</li>
+      <li>  Jkarta</li>
+      <li>sdfsdaf</li>
+      <li> sdfjadslfjl</li>
+      <li>sdfsdaf</li>
+      <li> sdfjadslfjl</li>
+    </ul>
 </div>
 
 

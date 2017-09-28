@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/register.css">
 </head>
 <body>
-	<form action="/register.php" method="POST">
+	<form id="form" action="/wbd/verification.php" method="POST">
 	<div class="box">
 
 		<table>
@@ -19,7 +19,7 @@
 		<table>
 			<tr>
 				<td>Your name</td>
-				<td><input type="text" name="name"></td>
+				<td><input type="text" name="name" id="name"></td>
 			</tr>
 			<tr>
 				<td>Username</td>
@@ -37,27 +37,29 @@
 			</tr>
 			<tr>
 				<td>Password</td>
-				<td><input type="password" name="password"></td>
+				<td><input type="password" name="password" id="password"></td>
 			</tr>
 			<tr>
 				<td>Confirm Password</td>
-				<td><input type="password" name="confirm-password"></td>
+				<td><input type="password" name="confirm-password" id="confirm-password"></td>
 			</tr>
 			<tr>
 				<td>Phone Number</td>
-				<td><input type="number" name="phone-number"></td>
+				<td><input type="text" name="phone-number" id="phone-number"></td>
 			</tr>
 		</table>
 
 		<div class="sign-as-driver">
-			<input type="checkbox" name="sign-as-driver"> Also sign me up as a driver!<br>
+			<input type="hidden" name="sign-as-driver" value=0>
+			<input type="checkbox" name="sign-as-driver" id="sign-as-driver" value=1> Also sign me up as a driver!<br>
 		</div>
 
 		<div class="already-have-account">
 			<a href="/login.php">Already have an account</a>
-			<button type="submit" name="register">REGISTER </button>
+			<input type="button" name="register" id="register" value="REGISTER" onclick="validate();">
 		</div>
 
+		<div id="errors"></div>
 	</div>
 	</form>
 </body>
@@ -120,6 +122,32 @@
 		}
 
 		request.send(vars);
+	}
+
+	function validate() {
+		validateUsername ();
+		validateEmail ();
+
+		var errors = "";
+		if (document.getElementById("name").value === "") {
+			errors += "Name cannot be empty<br>";
+		}
+		var password = document.getElementById("password").value
+		if (password === "") {
+			errors += "Password cannot be empty<br>";
+		} else {
+			if (password !== document.getElementById("confirm-password").value) {
+				errors += "Passwords do not match<br>";
+			}
+		}
+		if (document.getElementById("phone-number").value === "") {
+			errors += "Phone number cannot be empty<br>";
+		}
+		document.getElementById("errors").innerHTML = errors;
+
+		if (errors === "" && document.getElementById("username-check").innerHTML === "V" && document.getElementById("email-check").innerHTML === "V") {
+			document.getElementById("form").submit();
+		} 
 	}
 
 </script>

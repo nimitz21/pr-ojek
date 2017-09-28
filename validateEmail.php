@@ -2,12 +2,18 @@
 	include 'connectdb.php';
 
 	$email = $_POST['email'];
-
-	$queryResult = $db->query('SELECT email FROM users');
 	$valid = true;
-	while (($registeredEmail = $queryResult->fetch_assoc()) && $valid) {
-		if ($registeredEmail['email'] === $email) {
-			$valid = false;
+
+	if ($email === "") {
+		$valid = false;
+	}
+
+	if ($valid) {
+		$queryResult = $db->query('SELECT email FROM users');
+		while (($registeredEmail = $queryResult->fetch_assoc()) && $valid) {
+			if ($registeredEmail['email'] === $email) {
+				$valid = false;
+			}
 		}
 	}
 

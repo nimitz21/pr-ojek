@@ -1,0 +1,40 @@
+#order {
+  margin-top: 10px;
+  background-color: rgb(4,119,31);
+}
+#order>a {
+  color: white;
+}
+
+.order-header {
+	font-size: 1.6rem;
+}
+
+.order-steps {
+	margin: auto;
+}
+
+
+.steps > li {
+	display: inline-block;
+	border-style: solid;
+	border-width: 2px !important;
+	margin: 0px 30px;
+	width: 125px;
+	max-width: 125px;
+}
+
+.step-number {
+	display: inline-block;
+	border-style: solid;
+	border-radius: 100%;
+	margin: 5px 2px;
+	width: 15px;
+	text-align: center;
+	background-color: rgb(200, 200, 200);
+}
+
+.step-name {
+	margin: 10px 10px;
+}
+

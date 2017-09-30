@@ -18,3 +18,11 @@
 .short-textbox {
 	width: 80%;
 }
+
+.already-have-account {
+	display: inline;
+}
+
+.register {
+	display: inline;
+}

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>register</title>
+	<title>Register</title>
 	<link rel="stylesheet" type="text/css" href="css/register.css">
 </head>
+
 <body>
 	<form id="form" action="/wbd/verification.php" method="POST">
 	<div class="box">
@@ -56,6 +58,9 @@
 
 		<div class="already-have-account">
 			<a href="/login.php">Already have an account</a>
+		</div>
+
+		<div class="register">
 			<input type="button" name="register" id="register" value="REGISTER" onclick="validate();">
 		</div>
 

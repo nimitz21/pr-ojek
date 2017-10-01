@@ -1,9 +1,11 @@
 <?php 
   include 'connectdb.php';
+  session_start();
 
   $_SESSION["user_id"] = 1;
 
-  include 'getinfo.php'
+  include 'getinfo.php';
+  include 'getlocation.php';
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +31,7 @@
       My Profile
     </p>
 
-    <a href="/editprofile.php">
+    <a href="/wbd/TugasBesar1_2017/editprofile.php">
       <img id="editpic" src="storage/images/editpic.png" alt="Edit">  
     </a>
     
@@ -70,7 +72,7 @@
     <p id="preffered-location">
       Preferred Locations
     </p>
-    <a href="/editlocation.php">
+    <a href="/wbd/TugasBesar1_2017/editlocation.php">
       <img id="editpic" src="storage/images/editpic.png" alt="Edit">  
     </a>
     

@@ -72,7 +72,7 @@
     <p id="preffered-location">
       Preferred Locations
     </p>
-    <a href="/wbd/TugasBesar1_2017/editlocation.php">
+    <a href="/wbd/TugasBesar1_2017/editpreferred.php">
       <img id="editpic" src="storage/images/editpic.png" alt="Edit">  
     </a>
     

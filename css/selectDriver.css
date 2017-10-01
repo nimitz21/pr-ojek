@@ -1,3 +1,28 @@
-#driver {
+#select-driver {
 	background-color: yellow;
+}
+
+.content {
+	border-style: solid;
+}
+
+.no-content {
+	color: grey;
+	text-align: center;
+}
+
+.average-rating {
+	color: yellow;
+}
+
+.prof-pic {
+	width: 100px;
+}
+
+.driver-info {
+	width: 300px;
+}
+
+.choose {
+	float: right;
 }

@@ -21,7 +21,7 @@
 			</table>
 		</li>
 
-		<li id="driver">
+		<li id="select-driver">
 			<table>
 				<tr>
 					<th class="step-number">
@@ -34,7 +34,7 @@
 			</table>
 		</li>
 
-		<li id="complete">
+		<li id="complete-order">
 			<table>
 				<tr>
 					<th class="step-number">

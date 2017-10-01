@@ -37,15 +37,15 @@
   <ul class="navigation">
 
     <li id="order">
-      <a href="/order.php">ORDER</a>
+      <a href="/wbd/selectDestination.php">ORDER</a>
     </li>
 
     <li id="history">
-      <a href="/history.php">HISTORY</a>
+      <a href="/wbd/history.php">HISTORY</a>
     </li>
 
     <li id="profile">
-      <a href="/profile.php">MY PROFILE</a>
+      <a href="/wbd/profile.php">MY PROFILE</a>
     </li>
 
   </ul>

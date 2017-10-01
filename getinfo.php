@@ -9,7 +9,7 @@ if($results->num_rows > 0) {
   $result = $results->fetch_assoc();
 }
 
-$ratequery = "SELECT avg(rating) as avgrate, count(rating) as votes FROM orders WHERE user_id=" . $actid;
+$ratequery = "SELECT avg(rating) as avgrate, count(rating) as votes FROM orders WHERE driver_id=" . $actid;
 $ratings = $db->query($ratequery);
 
 if($ratings->num_rows > 0) {

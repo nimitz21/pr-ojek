@@ -15,11 +15,13 @@
   <title>Profile</title>
 
   <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="css/nav.css">
 </head>
 
 
 <body>
 
+<<<<<<< HEAD
 <div class="nav-header">
 
   <ul class="header">
@@ -73,6 +75,11 @@
   </ul>
 </div>
 
+=======
+<?php
+	include 'nav.php';
+?>
+>>>>>>> ab64f80760afbd4dcd473fa4eee5fee8535d829d
 
 <div class="profileinfo">
 

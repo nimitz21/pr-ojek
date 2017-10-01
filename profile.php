@@ -21,65 +21,9 @@
 
 <body>
 
-<<<<<<< HEAD
-<div class="nav-header">
-
-  <ul class="header">
-
-    <li class="nav-title">
-
-      <p id="projek">
-        <span id="pr">
-          PR
-        </span>-
-        <span id="ojek">
-          OJEK
-        </span>
-      </p>
-
-      <p id="hi-uname">Hi, <?php echo $result['username']; ?> </p>
-
-    </li>
-
-    <li class="nav-description">
-
-      <p id="wush">
-        wush... wush... ngeeeeengg...
-      </p>
-
-      <a href="/wbd/TugasBesar1_2017/logout.php" class="logout-link">
-        Logout
-      </a>
-
-    </li>
-
-  </ul>
-
-</div>
-
-<div class="nav-body">
-  <ul class="navigation">
-
-    <li id="order">
-      <a href="/order.php">ORDER</a>
-    </li>
-
-    <li id="history">
-      <a href="/history.php">HISTORY</a>
-    </li>
-
-    <li id="profile">
-      <a href="/profile.php">MY PROFILE</a>
-    </li>
-
-  </ul>
-</div>
-
-=======
 <?php
 	include 'nav.php';
 ?>
->>>>>>> ab64f80760afbd4dcd473fa4eee5fee8535d829d
 
 <div class="profileinfo">
 

@@ -8,14 +8,13 @@
 
   if($_SERVER['REQUEST_METHOD'] == "POST") {
     $location = $_POST['location'];
-    echo $userid;
-    echo $location;
+    $oldlocation = $_POST['oldlocation'];
   }
 
-  $query = "UPDATE user_location SET location='".$location."' WHERE user_id=".$activeid."";
+  $query = "UPDATE user_location SET location='".$location."' WHERE user_id=".$activeid." AND location ='".$oldlocation."'";
   $queryresult = $db->query($query);
  ?>
 
- <script type="text/javascript">
-  window.location = "/wbd/TugasBesar1_2017/editpreferred.php";
+<script type="text/javascript">
+  window.location = '/wbd/TugasBesar1_2017/editpreferred.php';
 </script>

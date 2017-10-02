@@ -30,9 +30,10 @@
           foreach ($locations as $loc) {
             echo "<tr>";
             echo "<td id='number'>" . $i . "</td>";
-            echo "<td id='location".$i."'>
+            echo "<td>
                     <form id='form".$i ."' action='editlocation.php' method='POST'>
-                    ".$loc['location'] ."
+                      <p id='location".$i."'>".$loc['location'] ."</p>
+                      <input type='hidden' name='oldlocation' value='".$loc['location']. "'>
                     </form>
                   </td>";
             echo "<td> 
@@ -76,38 +77,40 @@
 <script type="text/javascript">
 
   function submitform() {
-    let id = document.getElementById('number').innerHTML;
+    let id= event.srcElement.id;
+    id = id.slice(-1);
+
     let form = document.getElementById('form'+id);
     form.submit();
   }
 
+
   function editLocation () {
-
-    let id = document.getElementById('number').innerHTML;
-    let td = document.getElementById('form'  + id);
-    let inner = td.innerHTML;
-
-    let form = "<input type='text' name='location' class='textbox' value='"+inner"'>"
-    let input = document.createElement('input');
-    input.type = "text";
-    input.value = inner;
-    input.name = "location";
-    input.className = "textbox";
-
-    console.log(input); 
-    alert('asdf');
+    let id= event.srcElement.id;
+    id = id.slice(-1);
 
 
-    let image = document.getElementById('editpic' + id);
-    let newimage = document.createElement('input');
-    newimage.type = "image"
-    newimage.src = "storage/images/tick.jpg";
-    newimage.id = "tickpic";
-    newimage.onclick = submitform();
+    let image = document.getElementById(event.srcElement.id);
 
-    image.parentNode.replaceChild(newimage,image);
 
-    td.parentNode.replaceChild(input, td);
+    if(image != null && image.src == "http://localhost/wbd/TugasBesar1_2017/storage/images/editpic.png") {    
+      image.id = "tickpic"+id;
+      image.src = "storage/images/tick.jpg";
+
+      let td = document.getElementById('location'  + id);
+      let inner = td.innerHTML;
+
+      let input = document.createElement('input');
+      input.type = "text";
+      input.value = inner;
+      input.name = "location";
+      input.className = "textbox";
+
+      td.parentNode.replaceChild(input, td);
+    } else {
+      submitform();
+    } 
+
 
   }
 

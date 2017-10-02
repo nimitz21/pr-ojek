@@ -1,0 +1,28 @@
+.editprofileplaceholder {
+  text-align: center;
+}
+
+#editprofile {
+  font-size: 3rem;
+  display: inline-block;
+}
+
+fieldset {
+  border: none;
+  display: inline-block;
+}
+
+.row {
+  display: inline-grid;
+}
+
+#profpic {
+  width: 150px;
+  height: auto;
+  border-style: solid;
+  display: inline-block;
+}
+
+#profilepicture {
+  display: inline-block;
+}

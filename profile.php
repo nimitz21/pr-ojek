@@ -3,9 +3,9 @@
   session_start();
 
   $_SESSION["user_id"] = 1;
-
   include 'getinfo.php';
   include 'getlocation.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +39,7 @@
 
 <div class="information">
 
-  <img id="profpic" src="storage/images/profpic.jpg" alt="Profile Picture">
+  <img id="profpic" src="storage/images/<?php echo $result['picture'];?>" alt="Profile Picture">
 
   <p id="user-info">
     @<?php echo "<b>" . $result['username'] . "</b>" ; ?>

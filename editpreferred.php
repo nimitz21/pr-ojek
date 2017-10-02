@@ -38,13 +38,17 @@
                   </td>";
             echo "<td> 
                     <img id='editpic".$i."' src='storage/images/editpic.png' alt='Edit' onclick='editLocation();'>
-                    <img id='deletepic' src='storage/images/delete.png' alt='Edit'>  
+                    <form id='confirmdelete".$i."' action='deletelocation.php' method='POST'>
+                      <img id='deletepic".$i."' src='storage/images/delete.png' onclick='confirmdelete();'>
+                      <input type='hidden' id='delete".$i."' name='location' value='".$loc['location']. "'>
+                    </form>
                   </td>";
 
             $i+=1;
             
           }
         ?>
+
         
       </table>
 
@@ -75,6 +79,18 @@
  </html>
 
 <script type="text/javascript">
+
+  function confirmdelete() {
+
+    let id= event.srcElement.id;
+    id = id.slice(-1);
+    let item = document.getElementById('delete' +id).value;
+    let decision = confirm("Are you sure want to delete " + item + "?" );
+    if(decision) {
+      let form = document.getElementById('confirmdelete'+id);
+      form.submit();
+    }
+  }
 
   function submitform() {
     let id= event.srcElement.id;

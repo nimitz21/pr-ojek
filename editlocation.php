@@ -16,5 +16,5 @@
  ?>
 
 <script type="text/javascript">
-  window.location = '/wbd/TugasBesar1_2017/editpreferred.php';
+  window.location = '/wbd/editpreferred.php';
 </script>

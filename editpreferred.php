@@ -61,13 +61,13 @@
       Add New Location
     </p>
 
-    <form action="/wbd/TugasBesar1_2017/addnewlocation.php" method="POST">
+    <form action="/wbd/addnewlocation.php" method="POST">
       <input type="text" name="newlocation" id="newlocation" required>
       <button type="submit" id="addlocation">Add</button>
     </form>
 
 
-    <a href="/wbd/TugasBesar1_2017/profile.php">
+    <a href="/wbd/profile.php">
       <button type="submit" id="back">
         Back
       </button>
@@ -109,7 +109,7 @@
     let image = document.getElementById(event.srcElement.id);
 
 
-    if(image != null && image.src == "http://localhost/wbd/TugasBesar1_2017/storage/images/editpic.png") {    
+    if(image != null && image.src == "http://localhost/wbd/storage/images/editpic.png") {    
       image.id = "tickpic"+id;
       image.src = "storage/images/tick.jpg";
 

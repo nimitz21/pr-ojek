@@ -23,7 +23,7 @@
         wush... wush... ngeeeeengg...
       </p>
 
-      <a href="/logout.php" class="logout-link">
+      <a href="/wbd/logout.php" class="logout-link">
         Logout
       </a>
 

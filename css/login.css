@@ -1,0 +1,28 @@
+.content {
+	height: 600px;
+	width: 500px;
+	background-color: #00F000;
+	border-radius: 10%;
+	border: 10px solid green; 
+	margin: auto;
+}
+
+#submit-button {
+	background-color: #00AF50; /* Green */
+    border: 2px solid black;
+    border-radius: 10%;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.line {
+    width: 50%;
+}
+
+tr {
+    width: 200px;
+}

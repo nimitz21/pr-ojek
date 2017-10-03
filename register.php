@@ -58,7 +58,7 @@
 		</div>
 
 		<div class="already-have-account">
-			<a href="/login.php">Already have an account</a>
+			<a href="/wbd/login.php">Already have an account</a>
 		</div>
 
 		<div class="register">

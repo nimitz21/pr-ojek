@@ -1,0 +1,12 @@
+#history {
+	background-color: rgb(4,119,31);
+}
+
+#history > a {
+	color: white;
+}
+
+.history-nav-body > li {
+	display: inline;
+	border-style: solid;
+}

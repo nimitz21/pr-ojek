@@ -9,20 +9,140 @@
 
 fieldset {
   border: none;
-  display: inline-block;
 }
 
+fieldset>input {
+}
+
+
 .row {
-  display: inline-grid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  display: block;
+}
+
+.rowa {
+
+  display: inline-block;
+  vertical-align: middle;
+  width: 600px;
+  height: 20px;
 }
 
 #profpic {
+  float: left;
   width: 150px;
   height: auto;
   border-style: solid;
-  display: inline-block;
 }
 
-#profilepicture {
+#updateprofile {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+#yourname {
+  margin: 0px 5px;
+  float: left;
+}
+
+#name {
+  margin-left: 165px;
+  float: left;
+}
+
+#phone{
+  margin: 0px 5px;
+  float: left;
+}
+
+#phonenumber {
+  margin-left: 198px;
+  float: left;
+}
+
+#statusdriver {
+  margin: 0px 5px;
+  float: left;
+}
+
+.switch {
+  margin-left: 100px;
+  position: relative;
   display: inline-block;
+  width: 44px;
+  height: 20px;
+}
+
+.switch input {
+  display:none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.round {
+  border-radius: 20px;
+}
+
+input:checked + .slider {
+  background-color: #00b50e;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #00b50e;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px);
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#back {
+  height: 40px;
+  width: 60px;
+  background-color: red;
+  border-radius: 20%;
+  border: none;
+  float: left;
+  margin-left: 367px;
+}
+
+#submitprofile {
+  margin-right: 367px;
+  height: 40px;
+  width: 60px;
+  background-color: green;
+  border-radius: 20%;
+  border: none;
+  float: right;
 }

@@ -1,18 +1,22 @@
 .box {
 	height: 600px;
 	width: 500px;
-	background-color: #00F000;
+	background-color: #8bbd3c;
 	border-radius: 10%;
-	border: 10px solid green;
+	border: 10px solid #02702c; 
+	margin: auto;
 }
 
 .line {
-	width: 25%;
+    width: 28.6%;
+    padding: 0px 5%;
 }
 
 .sign-up {
-	font-size: 40px;
-	padding: 0 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 4.125em;
+    border-spacing: 0px 15px;
+    color: #02702c;
 }
 
 .short-textbox {
@@ -20,9 +24,68 @@
 }
 
 .already-have-account {
-	display: inline;
+    font-family: Garamond, serif;
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 1em;
+    padding-left: 20px;
 }
 
-.register {
+#register {
+	background-color: #82d800;
+    border: 2px solid black;
+    border-radius: 10%;
+    color: #333333;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    font-family: Garamond, serif;
+    float: right;
+    margin-top: -30px;
+    margin-right: 30px;
+}
+
+hr {
+    border: 2px solid #02702c;
+}
+
+.text {
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    margin: 20px 30px;
+    padding: 5px 20px;
+    color: #02702c;
+}
+
+a:visited {
+    color: #333333;
+}
+
+.sign-as-driver {
+	padding-top: 30px;
+	padding-left: 15px;
+	font-family: sans-serif;
+    color: #02702c;
+}
+
+.spaced {
+	padding-top: 40px;
+}
+
+#username, input[type=email]{
+    width: 120%;
+    padding: 6px;
+    border: 1px solid #02702c;
+    display: inline;
+}
+input[type=text], input[type=password] {
+    width: 150%;
+    padding: 6px;
+    border: 1px solid #02702c;
+}
+
+label {
 	display: inline;
 }

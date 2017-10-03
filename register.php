@@ -19,35 +19,35 @@
 			</tr>
 		</table>
 
-		<table>
+		<table class="spaced">
 			<tr>
-				<td>Your name</td>
+				<td class="text">Your name</td>
 				<td><input type="text" name="name" id="name"></td>
 			</tr>
 			<tr>
-				<td>Username</td>
+				<td class="text">Username</td>
 				<td>
 					<input type="text" name="username" id="username" class="short-textbox" onblur="validateUsername();">
 					<label id="username-check"></label>
 				</td>
 			</tr>
 			<tr>
-				<td>Email</td>
+				<td class="text">Email</td>
 				<td>
 					<input type="email" name="email" id="email" class="short-textbox" onblur="validateEmail();">
 					<label id="email-check"></label>
 				</td>
 			</tr>
 			<tr>
-				<td>Password</td>
+				<td class="text">Password</td>
 				<td><input type="password" name="password" id="password"></td>
 			</tr>
 			<tr>
-				<td>Confirm Password</td>
+				<td class="text">Confirm Password</td>
 				<td><input type="password" name="confirm-password" id="confirm-password"></td>
 			</tr>
 			<tr>
-				<td>Phone Number</td>
+				<td class="text">Phone Number</td>
 				<td><input type="text" name="phone-number" id="phone-number"></td>
 			</tr>
 		</table>

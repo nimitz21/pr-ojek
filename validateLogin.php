@@ -28,7 +28,7 @@
 		$userid = $db->query("SELECT id FROM users WHERE username = '".$username."'")->fetch_assoc();
 		header('Location: http://localhost/wbd/profile.php?activeid='.$userid['id']);		
 	} else {
-		header('Location: http://localhost/wbd/login.php?errorcode=1');
+		header('Location: http://localhost/wbd/index.php?errorcode=1');
 
 	}
 ?>

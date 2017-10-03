@@ -67,6 +67,7 @@
 
 </html>
 
+<script type="text/javascript" src="js/appendqs.js"> </script>
 <script>
 	function rate(rating) {
 		for (i = 1; i <= rating; ++i) {

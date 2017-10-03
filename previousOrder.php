@@ -26,7 +26,7 @@
 			<?php
 				$orderQuery = "SELECT userOrders.id, driver_id, pickup, destination, rating, comment, date, name, picture FROM (SELECT * FROM orders WHERE user_id = " . $_SESSION['user_id'] . ") as userOrders JOIN users on driver_id = users.id";
 				$orderResults = $db->query($orderQuery);
-				
+			
 				while ($order = $orderResults->fetch_assoc()) {
 					echo("<li id=" . $order['id'] . ">
 								<table>
@@ -34,7 +34,7 @@
 										<td class='prof-pic'><img src='storage/images/" . $order['picture'] . "'></td>
 										<td>
 											<ul>
-												<li class='date'>" . $order['date'] . "</li>
+												<li class='date'>" . date('l, F jS Y', strtotime($order['date'])) . "</li>
 												<li class='hide-button'><input type='button' value='HIDE' onclick='hideDriver(" . $order['id'] . ");'></li>
 												<li class='name'>" . $order['name'] . "</li>
 												<li class='location'>" . $order['pickup'] . " - " . $order['destination'] . "</li>
@@ -61,6 +61,7 @@
 </body>
 
 </html>
+<script type="text/javascript" src="js/appendqs.js"> </script>
 
 <script>
 	function hideDriver(orderId) {

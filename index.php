@@ -29,14 +29,17 @@
 				<a href="register.php" class="register">Don't have an account?</a>
 				<input type="submit" name="login" id="submit-button" value="GO!">
 			</form>
+			<div class="error-message">
+				<br/>
+				<?php 
+					if (isset($_GET['errorcode'])) {
+						if ($_GET['errorcode'] == 1) {
+							echo "Username tidak terdaftar atau password salah";
+						}
+					}
+				?>
+			</div>
 		</div>
-		<?php 
-			if (isset($_GET['errorcode'])) {
-				if ($_GET['errorcode'] == 1) {
-					echo "Username tidak terdaftar atau password salah";
-				}
-			}
-		?>
 	</div>
 </body>
 </html>

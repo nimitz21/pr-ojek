@@ -34,7 +34,7 @@
 										<td class='prof-pic'><img src='storage/images/" . $order['picture'] . "'></td>
 										<td>
 											<ul>
-												<li class='date'>" . $order['date'] . "</li>
+												<li class='date'>" . date('l, F jS Y', strtotime($order['date'])) . "</li>
 												<li class='hide-button'><input type='button' value='HIDE' onclick='hideDriver(" . $order['id'] . ");'></li>
 												<li class='name'>" . $order['name'] . "</li>
 												<li class='location'>" . $order['pickup'] . " - " . $order['destination'] . "</li>

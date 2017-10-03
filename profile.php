@@ -16,6 +16,8 @@
 
   <link rel="stylesheet" href="css/profile.css">
   <link rel="stylesheet" href="css/nav.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
 </head>
 
 

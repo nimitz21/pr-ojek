@@ -13,7 +13,7 @@
         </span>
       </p>
 
-      <p id="hi-uname">Hi, <?php echo $result['username']; ?> </p>
+      <p id="hi-uname">Hi, <b><?php echo $result['username']; ?></b> </p>
 
     </li>
 

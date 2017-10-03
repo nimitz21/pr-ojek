@@ -11,6 +11,8 @@
 #myprofile,#preffered-location {
   font-size: 3rem;
   display: inline-block;
+  font-family: Oswald, sans-serif;
+  color: #333333;
 }
 #location {
   list-style: katakana;
@@ -28,13 +30,14 @@
 
 #profpic {
   border-radius: 50%;
-  border-style: solid;
-  width: auto;
+  border: 5px solid #333333;
   height: 200px;
+  width: 200px;
 }
 
 #user-info {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  font-family: Roboto Slab, serif;
 }
 
 #rating {

@@ -4,6 +4,7 @@
 <head>
 	<title>Register</title>
 	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 
 <body>

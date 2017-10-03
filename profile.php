@@ -2,7 +2,7 @@
   include 'connectdb.php';
   session_start();
 
-  $_SESSION["user_id"] = 1;
+  $_SESSION["user_id"] = 58;
   include 'getinfo.php';
   include 'getlocation.php';
 

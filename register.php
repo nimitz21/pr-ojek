@@ -37,6 +37,7 @@
 					<input type="email" name="email" id="email" class="short-textbox" onblur="validateEmail();">
 					<label id="email-check"></label>
 				</td>
+
 			</tr>
 			<tr>
 				<td class="text">Password</td>
@@ -65,7 +66,7 @@
 			<input type="button" name="register" id="register" value="REGISTER" onclick="validate();">
 		</div>
 
-		<div id="errors"></div>
+		<p id="errors"></p>
 	</div>
 	</form>
 </body>
@@ -135,8 +136,11 @@
 		validateEmail ();
 
 		var errors = "";
-		if (document.getElementById("name").value === "") {
+		name = document.getElementById("name").value;
+		if (name === "") {
 			errors += "Name cannot be empty<br>";
+		} else if (name.length > 20) {
+			errors += "Name cannot be longer than 20 characters<br>";
 		}
 		var password = document.getElementById("password").value
 		if (password === "") {
@@ -146,12 +150,15 @@
 				errors += "Passwords do not match<br>";
 			}
 		}
-		if (document.getElementById("phone-number").value === "") {
+		phoneNumber = document.getElementById("phone-number").value;
+		if (phoneNumber === "") {
 			errors += "Phone number cannot be empty<br>";
+		} else if (phoneNumber.lenth < 9 || phoneNumber > 12) {
+			errors += "Phone number must be between 9 and 12 long<br>"
 		}
 		document.getElementById("errors").innerHTML = errors;
 
-		if (errors === "" && document.getElementById("username-check").innerHTML === "V" && document.getElementById("email-check").innerHTML === "V") {
+		if (errors === "" && document.getElementById("username-check").innerHTML === "&#10004" && document.getElementById("email-check").innerHTML === "&#10004") {
 			document.getElementById("form").submit();
 		} 
 	}

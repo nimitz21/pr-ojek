@@ -60,7 +60,7 @@
 						echo("<li>
 									<table>
 										<tr>
-											<td class='prof-pic'><img src='storage/images/'". $preferredDrivers[$i]['picture'] . "')></td>
+											<td class='prof-pic'><img src='storage/images/". $preferredDrivers[$i]['picture'] . "')></td>
 											<td class='driver-info'>
 												<ul>
 													<li class='driver-name'>" . $preferredDrivers[$i]['name'] . "</li>

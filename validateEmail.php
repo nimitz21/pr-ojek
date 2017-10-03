@@ -4,8 +4,10 @@
 	$email = $_POST['email'];
 	$valid = true;
 
-	if ($email === "") {
-		$valid = false;
+	$valid = $email !== "";
+
+	if ($valid) {
+		$valid = filter_var($email, FILTER_VALIDATE_EMAIL);
 	}
 
 	if ($valid) {
@@ -18,8 +20,8 @@
 	}
 
 	if ($valid) {
-		echo ("V");
+		echo ("&#10004");
 	} else {
-		echo ("X");
+		echo ("&#10008");
 	}
 ?>

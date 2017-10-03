@@ -4,9 +4,7 @@
 	$username = $_POST['username'];
 	$valid = true;
 
-	if ($username === "") {
-		$valid = false;
-	}
+	$valid = $username !== "";
 
 	if ($valid) {
 		$queryResult = $db->query('SELECT username FROM users');
@@ -18,8 +16,8 @@
 	}
 
 	if ($valid) {
-		echo ("V");
+		echo ("&#10004");
 	} else {
-		echo ("X");
+		echo ("&#10008");
 	}
 ?>

@@ -47,6 +47,7 @@
 </body>
 </html>
 
+<script type="text/javascript" src="js/appendqs.js"> </script>
 <script>
 	function nextStep() {
 		if (document.getElementById("picking-point").value !== "" && 

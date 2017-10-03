@@ -1,10 +1,7 @@
 <?php
   
   include 'connectdb.php';
-
-  session_start();
-
-  $activeid = $_SESSION['user_id'];
+  $activeid = $_GET['activeid'];
 
   if($_SERVER['REQUEST_METHOD'] == "POST") {
     $location = $_POST['newlocation'];
@@ -15,5 +12,7 @@
  ?>
 
  <script type="text/javascript">
-  window.location = "/wbd/editpreferred.php";
+
+  let querystring = window.location.search;
+  window.location = "/wbd/editpreferred.php" + querystring;
 </script>

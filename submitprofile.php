@@ -1,7 +1,6 @@
 <?php 
   include 'connectdb.php';
-  session_start();
-  $actid = $_SESSION["user_id"];
+  $actid = $_GET["activeid"];
 
   $query = "SELECT * FROM users WHERE ID=" . $actid;
   $results = $db->query($query);
@@ -22,7 +21,9 @@
       $newfilename = round(microtime(true)) . '.' . end($temp);
 
       if (move_uploaded_file($_FILES['profilepicture']['tmp_name'], $uploaddir . $newfilename)) {
-        unlink("storage/images/". $user['picture']);   
+        if($user['picture'] != "default.jpg") {
+          unlink("storage/images/". $user['picture']);   
+        }
         $db->query('UPDATE users SET picture="'. $newfilename . '" WHERE id=' . $actid);
       } else {
       }
@@ -34,5 +35,6 @@
  ?>
 
  <script type="text/javascript">
-  window.location = "/wbd/editprofile.php";
+  let querystring = window.location.search;
+  window.location = "/wbd/editprofile.php" + querystring;
  </script>

@@ -1,7 +1,6 @@
 <?php 
   include 'connectdb.php';
-  session_start();
-  $_SESSION["user_id"] = 1;
+
   include 'getlocation.php';
  ?>
 
@@ -78,6 +77,9 @@
  </body>
  </html>
 
+ 
+<script type="text/javascript" src="js/appendqs.js"></script>
+
 <script type="text/javascript">
 
   function confirmdelete() {
@@ -132,3 +134,4 @@
 
 
 </script>
+

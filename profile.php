@@ -2,7 +2,7 @@
   include 'connectdb.php';
   session_start();
 
-  $_SESSION["user_id"] = 58;
+  $_SESSION["user_id"] = 1;
   include 'getinfo.php';
   include 'getlocation.php';
 
@@ -85,9 +85,8 @@
     </ul>
 </div>
 
-
-
-
 </body>
 
 </html>
+
+<script type="text/javascript" src="js/appendqs.js"> </script>

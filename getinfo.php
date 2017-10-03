@@ -1,6 +1,6 @@
 <?php 
 
-$actid = $_SESSION["user_id"];
+$actid = $_GET["activeid"];
 
 $query = "SELECT * FROM users WHERE ID=" . $actid;
 $results = $db->query($query);

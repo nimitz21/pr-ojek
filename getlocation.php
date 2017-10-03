@@ -1,5 +1,5 @@
 <?php 
-$actid = $_SESSION["user_id"];
+$actid = $_GET["activeid"];
 $locquery = "SELECT location from user_location WHERE user_id=" . $actid;
 $locresults = $db->query($locquery);
 

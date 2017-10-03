@@ -6,17 +6,22 @@ var index = window.location.href.indexOf('?')
       for(var i = 0; i < tag.length; i++){
           var href = tag[i].getAttribute('href');
 
-          href += (href.indexOf('?') != -1)? '&' : '?';
-          href += querystring;
+          if(href.indexOf('?') == -1) {
+            href += '?';
+            href += querystring;
 
-          tag[i].setAttribute('href', href);
+            tag[i].setAttribute('href', href);
+          }
       }
       var formtag = document.getElementsByTagName('form');
       for(var i = 0; i < formtag.length; i++){
-          var href = formtag[i].getAttribute("action");
-          href += (href.indexOf('?') != -1)? '&' : '?';
-          href += querystring;
+          var action = formtag[i].getAttribute("action");
+          if(action.indexOf('?') == -1) {
+            action += '?';
+            action += querystring;
 
-          formtag[i].setAttribute('action', href);
+            formtag[i].setAttribute('action', action);
+
+          }
       }
   }

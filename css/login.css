@@ -8,16 +8,18 @@
 }
 
 #submit-button {
-	background-color: #00AF50; /* Green */
+	background-color: #82d800;
     border: 2px solid black;
     border-radius: 10%;
-    color: white;
+    color: #333333;
     padding: 5px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 2em;
+    font-family: Garamond, serif;
     float: right;
+    margin-top: 30px;
 }
 
 .line {
@@ -25,8 +27,8 @@
     padding: 0px 5%;
 }
 
-tr {
-    width: 200px;
+td {
+    width: 500px;
 }
 
 .login {
@@ -40,7 +42,7 @@ tr {
 }
 
 .form {
-    margin: 25% 15%;
+    margin: 22% 10%;
 }
 
 .text {
@@ -49,10 +51,24 @@ tr {
     margin: 10px 30px;
 }
 
-.wide {
-    width: 350px;
+.register {
+    font-family: Garamond, serif;
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 1.25em;
 }
 
-input[type=text,password] {
+input[type=text], input[type=password] {
     width: 150%;
+    padding: 6px;
+    border: 1px solid #02702c;
+    margin-left: -75px;
+}
+
+a:visited {
+    color: #333333;
+}
+
+hr {
+    border: 2px solid #02702c;
 }

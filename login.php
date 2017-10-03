@@ -9,9 +9,9 @@
 	<div class="content">
 		<table>
 			<tr>
-				<th class="line"><hr class="dgcolor"/></th>
+				<th class="line"><hr/></th>
 				<th class="login dgcolor">LOGIN</th>
-				<th class="line"><hr class="dgcolor"/></th>
+				<th class="line"><hr/></th>
 			</tr>
 		</table>
 		<div class="form">
@@ -27,9 +27,7 @@
 					</tr>
 				</table>
 				<a href="register.php" class="register">Don't have an account?</a>
-				<div class="buttons">
-					<input type="submit" name="login" id="submit-button" value="GO!">
-				</div>
+				<input type="submit" name="login" id="submit-button" value="GO!">
 			</form>
 		</div>
 		<?php 

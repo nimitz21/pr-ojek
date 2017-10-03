@@ -19,10 +19,13 @@
 <body>
 	<?php
 		include 'order.php';
-		include 'getDriverInfo.php';
 	?>
 
-	<?php echo($_POST['pickup']) ?>
+	<?php
+		$driverId = $_POST['driver'];
+
+		$driver = $db->query("SELECT username, name, picture FROM users WHERE id=" . $driverId)->fetch_assoc();
+	?>
 
 	<div class="content">
 		<form id="form" action="/wbd/orderDone.php" method="POST">
@@ -37,7 +40,7 @@
 
 		<div class="driver-info">
 		<ul>
-			<li class="profile-pic"></li>
+			<li class="profile-pic"><img src="storage/images/<?php echo($driver['picture']); ?>"></li>
 			<li class="username">@<?php echo($driver['username'])?></li>
 			<li class="name"><?php echo($driver['name'])?></li>
 			<li class="rating">

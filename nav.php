@@ -41,7 +41,7 @@
     </li>
 
     <li id="history">
-      <a href="/wbd/history.php">HISTORY</a>
+      <a href="/wbd/previousOrder.php">HISTORY</a>
     </li>
 
     <li id="profile">

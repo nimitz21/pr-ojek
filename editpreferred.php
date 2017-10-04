@@ -60,11 +60,12 @@
       Add New Location
     </p>
 
-    <form action="/wbd/addnewlocation.php" method="POST">
-      <input type="text" name="newlocation" id="newlocation" required>
+    <form name="addnewlocation" action="/wbd/addnewlocation.php" method="POST" onsubmit="return validateForm()">
+      <input type="text" name="newlocation" id="newlocation">
       <button type="submit" id="addlocation">Add</button>
+      <br>
+      <label for="nolocation" id="nolocation"></label>
     </form>
-
 
     <a href="/wbd/profile.php">
       <button type="submit" id="back">
@@ -81,6 +82,15 @@
 <script type="text/javascript" src="js/appendqs.js"></script>
 
 <script type="text/javascript">
+
+  function validateForm() {
+    let form = document.forms['addnewlocation']['newlocation'].value;
+    if(form == "") {
+      let label = document.getElementById('nolocation');
+      label.innerHTML = "Please input new location.";
+      return false;
+    }
+  }
 
   function confirmdelete() {
 

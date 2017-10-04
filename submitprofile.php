@@ -25,7 +25,6 @@
           unlink("storage/images/". $user['picture']);   
         }
         $db->query('UPDATE users SET picture="'. $newfilename . '" WHERE id=' . $actid);
-      } else {
       }
 
     }

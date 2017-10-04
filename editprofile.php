@@ -14,7 +14,7 @@
       <p id="editprofile">
         Edit Profile
       </p>
-      <form action="submitprofile.php" method="POST" enctype="multipart/form-data">
+      <form name="submitprofile" action="submitprofile.php" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
         <fieldset class="row">
           <img id='profpic' src="storage/images/<?php echo $result['picture']; ?>" alt="">
           <div id="updateprofile">
@@ -58,3 +58,15 @@
 </body>
 </html>
 <script type="text/javascript" src="js/appendqs.js"></script>
+<script type="text/javascript">
+  function validateForm() {
+    let name = document.forms['submitprofile']['name'].value;
+    let phone = document.forms['submitprofile']['phonenumber'].value;
+
+    if(name == "" || phone == "") {
+      alert("Please do not let the input empty!");
+      return false;
+
+    }
+  }
+</script>

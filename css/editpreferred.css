@@ -93,3 +93,8 @@ td>form>img {
   padding: 6px 50px;
   padding-left: 10px;
 }
+
+#nolocation {
+  font-size: 1.3rem;
+  color: red;
+}

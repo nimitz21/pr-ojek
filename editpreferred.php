@@ -7,8 +7,10 @@
  <!DOCTYPE html>
  <html>
  <head>
-   <title>Edit Preferred Location</title>
+   <title>EDIT PREFERRED LOCATION</title>
    <link rel="stylesheet" type="text/css" href="css/editpreferred.css">
+   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
  </head>
  <body>
 
@@ -18,7 +20,7 @@
       </p>
       <table class="locationtable" align="center">
 
-        <tr>
+        <tr class="table-header">
           <th>No</th>
           <th>Locations</th>
           <th>Actions</th>
@@ -27,7 +29,7 @@
         <?php 
             $i = 1;
           foreach ($locations as $loc) {
-            echo "<tr>";
+            echo "<tr id='contents'>";
             echo "<td id='number'>" . $i . "</td>";
             echo "<td>
                     <form id='form".$i ."' action='editlocation.php' method='POST'>

@@ -8,11 +8,13 @@
 <head>
   <title>Edit Location</title>
   <link rel="stylesheet" href="css/editprofile.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
 </head>
 <body>
    <div class="editprofileplaceholder">
       <p id="editprofile">
-        Edit Profile
+        EDIT PROFILE INFORMATION
       </p>
       <form action="submitprofile.php" method="POST" enctype="multipart/form-data">
         <fieldset class="row">

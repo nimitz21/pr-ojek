@@ -1,7 +1,8 @@
 <?php
 	include 'nav.php';
 ?>
-
+<head><link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"></head>
+<body>
 <div class="order-header">
 	MAKE AN ORDER
 </div>
@@ -48,3 +49,4 @@
 		</li>
 	</ul>
 </div>
+</body>

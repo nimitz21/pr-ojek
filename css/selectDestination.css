@@ -1,3 +1,33 @@
 #select-destination {
 	background-color: yellow;
 }
+
+.header-form {
+	font-family: sans-serif;
+	font-size: 20px;
+	color: #333333;
+}
+
+form {
+	margin-left: 25px;
+}
+
+input[type=text] {
+	width: 130%;
+	padding: 5px 3px;
+}
+
+input[type=button] {
+	background-color: #82d800;
+    border: 2px solid black;
+    border-radius: 10%;
+    color: #333333;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3em;
+    font-family: Garamond, serif;
+    margin-top: 30px;
+    margin-left: 120px;
+}

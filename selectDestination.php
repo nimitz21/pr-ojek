@@ -25,15 +25,15 @@
 		<form id="form" action="/wbd/selectDriver.php" method="POST">
 		<table>
 			<tr>
-				<td>Picking point</td>
+				<td class="header-form">Picking point</td>
 				<td><input type="text" name="picking-point" id="picking-point"></td>
 			</tr>
 			<tr>
-				<td>Destination</td>
+				<td class="header-form">Destination</td>
 				<td><input type="text" name="destination" id="destination"></td>
 			</tr>
 			<tr>
-				<td>Preferred Driver</td>
+				<td class="header-form">Preferred Driver</td>
 				<td><input type="text" name="preferred-driver" placeholder="(optional)"></td>
 			</tr>
 		</table>

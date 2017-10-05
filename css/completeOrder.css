@@ -2,3 +2,69 @@
 	background-color: yellow;
 }
 
+.content-header {
+	font-family: Oswald, sans-serif;
+	font-size: 28px;
+}
+
+.profile-pic {
+	width: 250px;
+}
+
+.username, .name, .rating, .comment {
+	width: 350px;
+}
+
+
+#prof-pic {
+	border-radius: 100%;
+	border: 3px solid #333333;
+	width: 150px;
+	height: 150px;
+	display: block;
+	float: right;
+}
+
+#complete {
+	background-color: #82d800;
+    border: 2px solid black;
+    border-radius: 10%;
+    color: #333333;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3em;
+    font-family: Roboto Slab, serif;
+    margin-top: 30px;
+    margin-left: 160px;
+}
+
+.username, .name {
+	font-family: Roboto Slab, serif;
+	color: #333333;
+	text-align: center;
+}
+
+.username {
+	font-size: 2em;
+	clear: right;
+}
+
+.name {
+	font-size: 1.2em;
+}
+
+.rating {
+	color: gold;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+input[type=text] {
+	width: 350px;
+	height: 50px;
+	margin: auto;
+	text-align: justify;
+	text-overflow: wrap;
+}

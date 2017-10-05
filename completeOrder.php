@@ -14,6 +14,8 @@
 	<link rel="stylesheet" href="css/order.css">
 	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="css/completeOrder.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
 </head>
 
 <body>
@@ -40,8 +42,8 @@
 
 		<div class="driver-info">
 		<ul>
-			<li class="profile-pic"><img src="storage/images/<?php echo($driver['picture']); ?>"></li>
-			<li class="username">@<?php echo($driver['username'])?></li>
+			<li class="profile-pic"><img id="prof-pic" src="storage/images/<?php echo($driver['picture']); ?>"></li>
+			<li class="username"><b>@<?php echo($driver['username'])?></b></li>
 			<li class="name"><?php echo($driver['name'])?></li>
 			<li class="rating">
 				<span id="1-star" onclick="rate(1);">&#9734</span>
@@ -54,7 +56,7 @@
 		</ul>
 		</div>
 
-		<div class="coment">
+		<div class="comment">
 			<input type="text" name="comment" id="comment" placeholder="Your comment...">
 		</div>
 

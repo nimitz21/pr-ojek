@@ -3,20 +3,24 @@
 }
 
 .content {
-	border-style: solid;
+	border: 1px solid #333333;
+	border-radius: 15px;
 }
 
 .no-content {
 	color: grey;
 	text-align: center;
+	font-family: sans-serif;
 }
 
 .average-rating {
-	color: yellow;
+	color: #FF8F00;
 }
 
-.prof-pic {
-	width: 100px;
+.driver-info {
+	font-family: Roboto Slab, serif;
+	color: #333333;
+	margin-left: 50px;
 }
 
 .driver-info {
@@ -24,5 +28,28 @@
 }
 
 .choose {
-	float: right;
+	background-color: #82d800;
+    border: 2px solid black;
+    border-radius: 10%;
+    color: #333333;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3em;
+    font-family: Roboto Slab, serif;
+    margin-top: 30px;
+}
+
+.content-header {
+	font-family: Oswald, sans-serif;
+	font-size: 22px;
+	color: #333333;
+}
+
+.prof-pic {
+	width: 150px;
+	height: 150px;
+	border: 1px solid black;
+	margin: 5px 15px;
 }

@@ -14,6 +14,8 @@
 	<link rel="stylesheet" href="css/order.css">
 	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="css/selectDriver.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
 </head>
 
 <body>
@@ -97,7 +99,7 @@
 						echo("<li>
 									<table>
 										<tr>
-											<td class='prof-pic'><img src='storage/images/". $otherDrivers[$i]['picture'] . "')></td>
+											<td><img class='prof-pic' src='storage/images/". $otherDrivers[$i]['picture'] . "')></td>
 											<td class='driver-info'>
 												<ul>
 													<li class='driver-name'>" . $otherDrivers[$i]['name'] . "</li>

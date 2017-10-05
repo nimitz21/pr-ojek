@@ -12,6 +12,8 @@
 	<link rel="stylesheet" href="css/history.css">
 	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="css/driverHistory.css">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
 </head>
 
 <body>
@@ -33,8 +35,8 @@
 										<td>
 											<ul>
 												<li class='date'>" . date('l, F jS Y', strtotime($order['date'])) . "</li>
-												<li class='hide-button'><input type='button' value='HIDE' onclick='hideDriver(" . $order['id'] . ");'></li>
-												<li class='name'>" . $order['name'] . "</li>
+												<li class='hide-button'><input type='button'  class='hide-button' value='HIDE' onclick='hideDriver(" . $order['id'] . ");'></li>
+												<li class='name'><b>" . $order['name'] . "</b></li>
 												<li class='location'>" . $order['pickup'] . " - " . $order['destination'] . "</li>
 												<li class='rating'>
 													gave 

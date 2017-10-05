@@ -1,3 +1,59 @@
 #previous-order {
 	background-color: green;
 }
+
+img {
+	width: 150px;
+	height: 150px;
+	border: 1px solid black;
+}
+
+.history-header {
+	font-family: Oswald, sans-serif;
+	font-size: 2.5em;
+	margin: 10px 5px;
+}
+
+.content {
+	margin: 30px 2px;
+}
+
+.hide-button {
+  height: 40px;
+  width: 60px;
+  background-color: #be0014;
+  border-radius: 20%;
+  border: 1px solid black;
+  float: right;
+  font-family: Roboto Slab, serif;
+}
+
+table {
+	font-family: Roboto Slab, serif;
+}
+
+.date {
+	color: #858585;
+	size: 0.8em;
+}
+
+.comment-content {
+	margin-left: 15px;
+	font-size: 0.8em;
+}
+
+.stars {
+	color: gold;
+}
+
+td:nth-child(2) {
+	width: 400px;
+}
+
+.name {
+	font-size: 1.2em;
+}
+
+.location, .rating, .comment-header {
+	font-size: 0.9em;
+}

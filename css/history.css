@@ -10,3 +10,12 @@
 	display: inline;
 	border-style: solid;
 }
+
+#previous-order, #driver-history {
+	font-family: sans-serif;
+	padding: 10px 15px;
+	margin: 10px -2px;
+	text-decoration: none;
+	color: black;
+}
+

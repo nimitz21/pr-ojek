@@ -9,10 +9,10 @@
 <div class="history-nav">
 	<ul class="history-nav-body">
 		<li id="previous-order">
-			<a href="/wbd/previousOrder.php">MY PREVIOUS ORDERS</a>
+			<a id="previous-order" href="/wbd/previousOrder.php">MY PREVIOUS ORDERS</a>
 		</li>
 		<li id="driver-history">
-			<a href="/wbd/driverHistory.php">DRIVER HISTORY</a>
+			<a id="driver-history" href="/wbd/driverHistory.php">DRIVER HISTORY</a>
 		</li>
 	</ul>
 </div>

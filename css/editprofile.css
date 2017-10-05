@@ -5,6 +5,7 @@
 #editprofile {
   font-size: 3rem;
   display: inline-block;
+  font-family: Oswald, sans-serif;
 }
 
 fieldset {
@@ -23,7 +24,7 @@ fieldset>input {
 }
 
 .rowa {
-
+  font-family: Roboto Slab, serif;
   display: inline-block;
   vertical-align: middle;
   width: 600px;
@@ -33,14 +34,15 @@ fieldset>input {
 #profpic {
   float: left;
   width: 150px;
-  height: auto;
+  height: 150px;
   border-style: solid;
 }
 
 #updateprofile {
   margin-top: 10px;
   margin-bottom: 30px;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-family: Roboto Slab, serif;
 }
 
 #yourname {
@@ -59,7 +61,7 @@ fieldset>input {
 }
 
 #phonenumber {
-  margin-left: 198px;
+  margin-left: 201px;
   float: left;
 }
 
@@ -130,9 +132,9 @@ input:checked + .slider:before {
 #back {
   height: 40px;
   width: 60px;
-  background-color: red;
+  background-color: #be0014;
   border-radius: 20%;
-  border: none;
+  border: 1px solid black;
   float: left;
   margin-left: 367px;
 }
@@ -141,8 +143,8 @@ input:checked + .slider:before {
   margin-right: 367px;
   height: 40px;
   width: 60px;
-  background-color: green;
+  background-color: #8bbd3c;
+  border: 1px solid #02702c;
   border-radius: 20%;
-  border: none;
   float: right;
 }

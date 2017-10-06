@@ -75,7 +75,7 @@
       <img id="editpic" src="storage/images/editpic.png" alt="Edit">  
     </a>
     
-    <ul>
+    <ul id="locationlist">
       <?php 
         foreach ($locations as $loc) {
           echo "<li id='location'>" .$loc['location'] . "</li>";
@@ -89,3 +89,16 @@
 </html>
 
 <script type="text/javascript" src="js/appendqs.js"> </script>
+
+<script type="text/javascript">
+  let lists = document.getElementById('locationlist').childNodes;
+    let a = 1;
+    let margin = 0;
+  lists.forEach(function(lists){
+    if(lists.id == "location") {
+      lists.style.marginLeft = "" + margin + 'px';
+      margin +=40;
+    }
+  });
+
+</script>

@@ -153,12 +153,11 @@
 		phoneNumber = document.getElementById("phone-number").value;
 		if (phoneNumber === "") {
 			errors += "Phone number cannot be empty<br>";
-		} else if (phoneNumber.lenth < 9 || phoneNumber > 12) {
+		} else if (phoneNumber.length < 9 || phoneNumber.length > 12) {
 			errors += "Phone number must be between 9 and 12 long<br>"
 		}
 		document.getElementById("errors").innerHTML = errors;
-
-		if (errors === "" && document.getElementById("username-check").innerHTML === "&#10004" && document.getElementById("email-check").innerHTML === "&#10004") {
+		if (errors === "" && document.getElementById("username-check").innerHTML == String.fromCharCode(10004) && document.getElementById("email-check").innerHTML == String.fromCharCode(10004)) {
 			document.getElementById("form").submit();
 		} 
 	}

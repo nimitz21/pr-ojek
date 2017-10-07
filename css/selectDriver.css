@@ -27,7 +27,7 @@
 	width: 300px;
 }
 
-.choose {
+#choose {
 	background-color: #82d800;
     border: 2px solid black;
     border-radius: 10%;

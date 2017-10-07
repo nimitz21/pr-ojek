@@ -10,12 +10,17 @@ img {
 
 .history-header {
 	font-family: Oswald, sans-serif;
-	font-size: 2.5em;
+	font-size: 3em;
 	margin: 10px 5px;
+	text-align: center;
 }
 
 .content {
 	margin: 30px 2px;
+}
+
+#drivers {
+	margin-left: 28%;
 }
 
 .hide-button {

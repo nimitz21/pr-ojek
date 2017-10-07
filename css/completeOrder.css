@@ -4,7 +4,8 @@
 
 .content-header {
 	font-family: Oswald, sans-serif;
-	font-size: 28px;
+	font-size: 42px;
+	text-align: center;
 }
 
 .profile-pic {
@@ -37,7 +38,8 @@
     font-size: 1.3em;
     font-family: Roboto Slab, serif;
     margin-top: 30px;
-    margin-left: 160px;
+    margin-left: -240px;
+
 }
 
 .username, .name {
@@ -58,7 +60,6 @@
 .rating {
 	color: gold;
 	font-size: 1.5em;
-	text-align: center;
 }
 
 input[type=text] {
@@ -67,4 +68,9 @@ input[type=text] {
 	margin: auto;
 	text-align: justify;
 	text-overflow: wrap;
+}
+
+.driver-info, .comment, .complete-order{
+	text-align: center;
+	margin-left: 36%;
 }

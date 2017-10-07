@@ -62,7 +62,7 @@
 						echo("<li>
 									<table>
 										<tr>
-											<td class='prof-pic'><img src='storage/images/". $preferredDrivers[$i]['picture'] . "')></td>
+											<td><img class='prof-pic' src='storage/images/". $preferredDrivers[$i]['picture'] . "')></td>
 											<td class='driver-info'>
 												<ul>
 													<li class='driver-name'>" . $preferredDrivers[$i]['name'] . "</li>
@@ -107,7 +107,7 @@
 														<span class='average-rating'>	&#9734 " . number_format($otherDrivers[$i]['avgrate'], 1) . "</span>
 														<span class='votes'>(" . $otherDrivers[$i]['votes'] . " votes)</span>
 													</li>
-													<li><input type='button' class='choose' name='choose' id='choose' value='I CHOOSE YOU!' onclick='choose(" . $otherDrivers[$i]['id'] . ");'><li>
+													<li class='choose'><input type='button' name='choose' id='choose' value='I CHOOSE YOU!' onclick='choose(" . $otherDrivers[$i]['id'] . ");'><li>
 												</ul>
 											</td>
 										</tr>

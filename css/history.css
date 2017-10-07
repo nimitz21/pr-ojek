@@ -13,9 +13,12 @@
 
 #previous-order, #driver-history {
 	font-family: sans-serif;
-	padding: 10px 15px;
+	padding: 10px 25px;
 	margin: 10px -2px;
 	text-decoration: none;
 	color: black;
 }
 
+.history-nav {
+	text-align: center;
+}

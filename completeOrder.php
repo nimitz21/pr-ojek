@@ -29,7 +29,7 @@
 		$driver = $db->query("SELECT username, name, picture FROM users WHERE id=" . $driverId)->fetch_assoc();
 	?>
 
-	<div class="content">
+	<div id="content">
 		<form id="form" action="/wbd/orderDone.php" method="POST">
 		
 		<input type="hidden" name="pickup" value="<?php echo(htmlspecialchars($_POST['pickup']));?>">
@@ -40,8 +40,8 @@
 			HOW WAS IT?
 		</div>
 
-		<div class="driver-info">
-		<ul>
+		<div class="driver">
+		<ul class="driver-info">
 			<li class="profile-pic"><img id="prof-pic" src="storage/images/<?php echo($driver['picture']); ?>"></li>
 			<li class="username"><b>@<?php echo($driver['username'])?></b></li>
 			<li class="name"><?php echo($driver['name'])?></li>

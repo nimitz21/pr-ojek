@@ -4,16 +4,16 @@
 
 .header-form {
 	font-family: sans-serif;
-	font-size: 20px;
+	font-size: 24px;
 	color: #333333;
 }
 
 form {
-	margin-left: 25px;
+	margin-left: 33.4%;
 }
 
 input[type=text] {
-	width: 130%;
+	width: 150%;
 	padding: 5px 3px;
 }
 
@@ -29,5 +29,6 @@ input[type=button] {
     font-size: 1.3em;
     font-family: Garamond, serif;
     margin-top: 30px;
-    margin-left: 120px;
+    margin-left: 150px;
 }
+

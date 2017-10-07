@@ -37,7 +37,7 @@
 												<li class='date'>" . date('l, F jS Y', strtotime($order['date'])) . "</li>
 												<li class='hide-button'><input type='button'  class='hide-button' value='HIDE' onclick='hideOrder(" . $order['id'] . ");'></li>
 												<li class='name'><b>" . $order['name'] . "</b></li>
-												<li class='location'>" . $order['pickup'] . " - " . $order['destination'] . "</li>
+												<li class='location'>" . $order['pickup'] . " → " . $order['destination'] . "</li>
 												<li class='rating'>
 													gave 
 													<span class='stars'>" . $order['rating'] . "</span>

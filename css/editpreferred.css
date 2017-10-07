@@ -50,7 +50,7 @@ td>form>img {
 }
 #tickpic {
   float: left; 
-  width: auto;
+  width: 75px;
   height: 35px;
   margin-left: 7px;
 }

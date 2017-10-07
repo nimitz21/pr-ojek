@@ -68,7 +68,7 @@ Terdapat 2 history yaitu previous order dan driver history.
 
 ![] (screenshost/previous.png)
 
-Pada halaman ini, pengguna dapat melihat order yang telah dilakukan sebelumnya. Pengguna juga dapat menyembunyikan order-order sebelumnya dengan tombol hide. Untuk pengimplementasian tombol show kembali belum dilakukan.
+Pada halaman ini, pengguna dapat melihat order yang telah dilakukan sebelumnya. Pengguna juga dapat menyembunyikan order-order sebelumnya dengan tombol hide. Untuk pengimplementasian tombol show kembali tidak dilakukan.
 
 #### Driver History
 

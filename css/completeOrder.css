@@ -74,3 +74,7 @@ input[type=text] {
 	text-align: center;
 	margin-left: 36%;
 }
+
+#comment {
+	resize: none;
+}

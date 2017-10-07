@@ -57,7 +57,7 @@
 		</div>
 
 		<div class="comment">
-			<input type="text" name="comment" id="comment" placeholder="Your comment...">
+			<textarea class="longInput" name="comment" id="comment" cols="50" rows="3" placeholder="Your comment..."></textarea>
 		</div>
 
 		<div class="complete-order">

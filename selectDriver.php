@@ -1,8 +1,6 @@
 <?php 
   include 'connectdb.php';
 
-  $_SESSION["user_id"] = 1;
-
   include 'getinfo.php'
 ?>
 
@@ -28,7 +26,7 @@
 		$destination = $_POST['destination'];
 		$preferredDriver = $_POST['preferred-driver'];
 
-		$driverQuery = "SELECT id, name, picture FROM (SELECT id, name, picture FROM users WHERE isDriver = 1) as driver JOIN user_location on driver.id = user_location.user_id WHERE location = '" . $pickingPoint . "'";
+		$driverQuery = "SELECT id, name, picture FROM (SELECT id, name, picture FROM users WHERE isDriver = 1 and id != " . $_GET['activeid'] . ") as driver JOIN user_location on driver.id = user_location.user_id WHERE location = '" . $pickingPoint . "'";
 		$driverResults = $db->query($driverQuery);
 
 
